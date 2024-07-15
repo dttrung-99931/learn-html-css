@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Grid</title>
+</head>
+
+<body>
+    <div class="bg-success text-white p-1">3 colums same width</div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col">Column 1</div>
+        <div class="col">Column 2</div>
+        <div class="col">Column 2</div>
+    </div>
+
+    <br>
+
+    <!-- 
+        4 columns with same width. On mobile, screen < 568 -> columns will be aligned vertically
+        576px  < On screen width < 768px => each column have with = 2cells   
+    -->
+    <div class="bg-info text-white p-1">Responsive columns</div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-3 col-md-2 bg-success-subtle">Column 1</div>
+        <div class="col-sm-3 col-md-2">Column 2</div>
+        <div class="col-sm-3 col-md-2 bg-success-subtle">Column 3</div>
+        <div class="col-sm-3 col-md-2">Column 4</div>
+    </div>
+
+    <br>
+
+    <!-- 
+        when with < 576px => column 1 width = 4 cells, column 2 = 8 cells
+        when  576px < with < 768px  => column 1 width = 8 cells, column 2 = 4 cells
+    -->
+    <div class="bg-secondary text-white p-1">Responsive columns with diff width</div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-4 col-md-8 bg-success-subtle">Column 1</div>
+        <div class="col-sm-8 col-md-4 bg-danger-subtle">Column 2</div>
+    </div>
+
+
+</body>
+
+</html>
