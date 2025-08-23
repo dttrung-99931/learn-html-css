@@ -1,0 +1,45 @@
+display: 
+  how element layout its children
+  ex: 
+    display: block
+      - Take full width by default if width not specified
+      - Always start on new line
+      => elements: div, p, h1, h2,.., footer, header, form, article
+
+    display: inline
+      - Take wrap width
+      - Will continue the previous element
+      => elements: span, a, img,...
+
+    display: inline-block
+      - is inline but also set width, height 
+    
+    display: flex
+position: 
+  how this element is positioned
+
+  position: relative
+    top: 10px
+    left: 10px
+    => like Transform.translate(offset: Offset(10, 10))
+
+  position: absolute
+    top: 32px
+    left: 32px
+    => align from the position of nearest parent
+
+  position: fixed
+    bottom: 32px,
+    right: 32px
+
+    => like set FAB button pos
+    => = absolute with parent is html tag
+    BUT element is STILL  moved when scroll   
+  
+    position: sticky
+    => like fixed but sticky on scroll
+    
+  position: static (default)
+  => top, left, z-index, ... will be ignore
+  => there's no special position 
+  => the position of element will be decided based on its display
